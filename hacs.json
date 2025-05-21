@@ -1,0 +1,9 @@
+{
+  "name": "KV Store",
+  "content_in_root": false,
+  "domains": ["sensor"],
+  "country": "",
+  "homeassistant": ">=2023.0.0",
+  "iot_class": "local_pushing",
+  "render_readme": true
+}

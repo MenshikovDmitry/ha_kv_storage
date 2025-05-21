@@ -1,0 +1,33 @@
+# Home Assistant
+home-assistant_v2.db*
+home-assistant.log*
+secrets.yaml
+deps/
+tts/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode
+.vscode/
+
+# Docker
+*.env
+docker-compose.override.yaml
+
+# System
+.DS_Store
+Thumbs.db
+
+# HACS/Custom Components
+/custom_components/kv_store/*.egg-info/
+
+# Test
+*.pytest_cache/
+
+# Misc
+*.swp
+*.swo

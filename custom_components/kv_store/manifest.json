@@ -1,0 +1,11 @@
+{
+  "domain": "kv_store",
+  "name": "KV Store",
+  "version": "0.1.0",
+  "documentation": "https://github.com/MenshikovDmitry/ha_kv_store",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["menshikov.dmitry@gmail.com"],
+  "iot_class": "local_pushing",
+  "platforms": ["sensor"]
+}

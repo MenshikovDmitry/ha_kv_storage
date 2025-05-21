@@ -1,0 +1,50 @@
+set:
+  name: Set Key-Value
+  description: Set a key-value pair in the store. Supports templates.
+  fields:
+    key:
+      name: Key
+      description: The key to set. Supports templates.
+      required: true
+      example: "temperature"
+      selector:
+        text:
+    value:
+      name: Value
+      description: The value to set. Supports templates.
+      required: true
+      example: "{{ states('sensor.temperature') }}"
+      selector:
+        text:
+    store_name:
+      name: Store Name
+      description: The name of the store. Supports templates.
+      required: true
+      example: "my_store1"
+      selector:
+        entity:
+          domain: sensor
+          integration: kv_store
+          multiple: false
+
+delete:
+  name: Delete Key
+  description: Delete a key from the store. Supports templates.
+  fields:
+    key:
+      name: Key
+      description: The key to delete. Supports templates.
+      required: true
+      example: "{{ 'temp_' ~ states('input_select.room') }}"
+      selector:
+        text:
+    store_name:
+      name: Store Name
+      description: The name of the store. Supports templates.
+      required: true
+      example: "my_store1"
+      selector:
+        entity:
+          domain: sensor
+          integration: kv_store
+          multiple: false
